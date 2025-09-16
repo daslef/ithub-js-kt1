@@ -12,11 +12,15 @@
 
 const word = prompt('Ваше слово')
 
-const wordLength = word.length // длина слова
-wordLength ** 0.5 // квадратный корень
-Math.pow(wordLength, 0.5) // квадратный корень
-Math.sqrt(wordLength) // квадратный корень
+if (word === null || word.length === 0) {
+    // TODO выбросить ошибку с пояснением
+}
 
-const result = 1 // дописать логику
+word.length // длина слова
+word.length ** 0.5 // квадратный корень
+Math.pow(word.length, 0.5) // квадратный корень
+Math.sqrt(word.length) // квадратный корень
+
+const result = word.length === 2 ? 1 : 0 // TODO
 
 console.log(result)

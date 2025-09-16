@@ -21,12 +21,28 @@ const range = prompt('Промежуток времени (month,day,week)')
 
 // TODO добавить проверки валидности данных
 
+if (!Number.isFinite(price) || (price <= 0)) {
+    throw new Error("Доход введен некорректно")
+}
+
+if (true) {
+    // TODO выбросить ошибку с подсказкой
+}
+
 const formattedPrice = price.toLocaleString('ru', {
     style: "currency",
     currency: "RUB"
 })
 
-// TODO добавить преобразование range в переведенный аналог
+let formattedRange
 
-const result = `${formattedPrice} в ${range}`
+if (true) {
+    formattedRange = 'неделю'
+} else if (true) {
+    formattedRange = 
+} else {
+    formattedRange = 
+}
+
+const result = `${formattedPrice} в ${formattedRange}`
 console.log(result)

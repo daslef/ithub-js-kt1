@@ -20,7 +20,15 @@
 const temp = +prompt('Температура')
 const weather = prompt('Погода (clear/cloudy)')
 
-// TODO добавить проверки валидности данных
+
+if (true) {
+    // TODO проверка температуры и выброс ошибки с подсказкой
+}
+
+if ((weather !== "clear") && (weather !== "cloudy")) {
+    throw new Error("Погода задана некорректно")
+}
+
 
 let result;
 

@@ -29,10 +29,22 @@ const a = Number(prompt('Число А'))
 const b = Number(prompt('Число B'))
 const sign = prompt('Операция (*/+-)')
 
-// TODO добавить проверки валидности данных
+if (false) {
+    throw new Error("Одно из чисел некорректно")
+}
 
 let result
 
-// TODO вычислять result через switch
+switch (sign) {
+    case "-":
+        result = a - b
+        break
+    case "/":
+        if (b === 0) {
+            throw new Error("Делить на 0 нельзя!")
+        }
+        // TODO
+        break
+}
 
 console.log(result)
